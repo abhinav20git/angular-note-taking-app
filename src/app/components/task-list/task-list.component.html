@@ -1,8 +1,11 @@
 
-<div *ngFor="let item of notes;">
-   <h3> {{item.title}}</h3>
+<div class="noTask" *ngIf="notes.length === 0">
+  <p>No tasks found.</p>
+</div>
+<div class="task" *ngFor="let item of notes;">
+  
+    <h3> {{item.title}}</h3>
    <p>{{item.content}}</p>
    <button (click)="editNote(item)">Edit</button>
    <button (click)="deleteNote(item.id)">Delete</button>
-   
 </div>
