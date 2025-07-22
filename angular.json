@@ -97,7 +97,16 @@
             ],
             "scripts": []
           }
-        }
+        },
+        "deploy": {
+  "builder": "angular-cli-ghpages:deploy",
+  "options": {
+    "baseHref": "/angular-note-taking-app/",
+    "deployUrl": "/angular-note-taking-app/",
+    "outputPath": "dist/first-project"
+  }
+}
+
       }
     }
   }
